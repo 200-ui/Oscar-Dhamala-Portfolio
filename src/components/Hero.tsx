@@ -149,7 +149,7 @@ export default function Hero() {
                   className="relative mt-10 w-80 h-96 bg-gradient-to-br from-white via-gray-50 to-white rounded-2xl shadow-2xl transform origin-top overflow-hidden"
                   style={{
                     transformOrigin: 'center top',
-                    animation: 'cardSwing 8s ease-in-out infinite',
+                    animation: 'cardSwing 0s ease-in-out infinite',
                     boxShadow: '0 35px 80px -12px rgba(0, 0, 0, 0.4)',
                     border: '3px solid transparent',
                     background: 'linear-gradient(white, white) padding-box, linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #f5576c 75%, #4facfe 100%) border-box'

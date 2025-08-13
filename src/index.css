@@ -451,4 +451,23 @@
     padding: 1em 0 !important;
     grid-gap: 2em !important;
   }
+  
+  /* Consistent section spacing on mobile for all sections */
+  .section-container {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+  
+  /* Specifically target all sections for uniform spacing */
+  section {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+  
+  /* Ensure section headings have consistent positioning */
+  .section-heading {
+    margin-bottom: 2rem !important;
+    font-size: 2rem !important;
+    line-height: 2.5rem !important;
+  }
 }

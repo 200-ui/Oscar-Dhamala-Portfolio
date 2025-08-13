@@ -95,13 +95,13 @@ export default function Hero() {
           >
             <a 
               href="https://www.linkedin.com/in/oscar-dhamala-3b800a246/" 
-              className={`btn-primary hover-translate ${isTerminal ? 'bg-terminal-green text-black hover:bg-terminal-green/80' : ''}`}
+              className={`cursor-target btn-primary hover-translate ${isTerminal ? 'bg-terminal-green text-black hover:bg-terminal-green/80' : ''}`}
             >
               LinkedIn
             </a>
             <a 
               href="#contact" 
-              className="btn-outline hover-translate"
+              className="cursor-target btn-outline hover-translate"
             >
               Contact Me
             </a>
@@ -222,7 +222,7 @@ export default function Hero() {
       
       <a 
         href="#about" 
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce hover-translate z-10"
+        className="cursor-target absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce hover-translate z-10"
       >
         <ChevronDown className={`w-10 h-10 ${isTerminal ? 'text-terminal-green' : ''}`} />
       </a>

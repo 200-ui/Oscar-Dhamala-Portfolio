@@ -4,10 +4,9 @@ import { ThemeProvider } from "@/hooks/useTheme";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
-import Skills from "@/components/Skills";
+import TechStack from "@/components/TechStack";
 import Works from "@/components/Works";
 import Contact from "@/components/Contact";
-import Footer from "@/components/Footer";
 import { useIsMobile } from "@/hooks/use-mobile";
 
 const Index = () => {
@@ -20,11 +19,10 @@ const Index = () => {
         <main className="flex-grow">
           <Hero />
           <About />
-          <Skills />
+          <TechStack />
           <Works />
           <Contact />
         </main>
-        <Footer />
       </div>
     </ThemeProvider>
   );

@@ -106,7 +106,7 @@ export default function Contact() {
                   
                   {/* Swinging WhatsApp Icon */}
                   <div 
-                    className={`swing-animation w-16 h-16 rounded-full flex items-center justify-center cursor-pointer transition-all duration-300 hover:scale-110 ${
+                    className={`cursor-target swing-animation w-16 h-16 rounded-full flex items-center justify-center cursor-pointer transition-all duration-300 hover:scale-110 ${
                       isTerminal ? 'bg-terminal-green text-black hover:bg-terminal-green/80' : 'bg-green-500 text-white hover:bg-green-600'
                     }`}
                     onClick={handleWhatsAppClick}
@@ -136,7 +136,7 @@ export default function Contact() {
                   
                   {/* Swinging Email Icon */}
                   <div 
-                    className={`swing-animation-delayed w-16 h-16 rounded-full flex items-center justify-center cursor-pointer transition-all duration-300 hover:scale-110 ${
+                    className={`cursor-target swing-animation-delayed w-16 h-16 rounded-full flex items-center justify-center cursor-pointer transition-all duration-300 hover:scale-110 ${
                       isTerminal ? 'bg-terminal-green text-black hover:bg-terminal-green/80' : 'bg-blue-500 text-white hover:bg-blue-600'
                     }`}
                     onClick={handleEmailClick}

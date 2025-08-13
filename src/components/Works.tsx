@@ -59,7 +59,7 @@ export default function Works() {
   }, [inView, visibleProjects]);
 
   return (
-    <section id="works" className="py-20 relative" ref={ref}>
+    <section id="works" className="py-10 relative" ref={ref}>
       {/* Background decorative elements */}
       {!isTerminal && (
         <>
@@ -123,7 +123,7 @@ export default function Works() {
                           href={project.link}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className={`p-3 rounded-full ${
+                          className={`cursor-target p-3 rounded-full ${
                             isTerminal
                               ? 'bg-terminal-green text-black hover:bg-terminal-green/80'
                               : 'bg-black text-white hover:bg-black/80'
@@ -196,7 +196,7 @@ export default function Works() {
                     href={project.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`p-3 rounded-full ${
+                    className={`cursor-target p-3 rounded-full ${
                       isTerminal
                         ? 'bg-terminal-green text-black hover:bg-terminal-green/80'
                         : 'bg-black text-white hover:bg-black/80'

@@ -9,7 +9,7 @@ export default function ThemeToggle() {
   return (
     <button
       onClick={toggleTheme}
-      className="p-2 rounded-full transition-all duration-300 hover:bg-secondary flex items-center gap-2 group hover-translate"
+      className="cursor-target p-2 rounded-full transition-all duration-300 hover:bg-secondary flex items-center gap-2 group hover-translate"
       aria-label={isTerminal ? "Switch to normal mode" : "Switch to terminal mode"}
     >
       {isTerminal ? (

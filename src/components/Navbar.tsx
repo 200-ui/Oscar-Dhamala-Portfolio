@@ -7,7 +7,7 @@ import { Menu, X } from "lucide-react";
 const navLinks = [
   { name: "Home", href: "#home" },
   { name: "About", href: "#about" },
-  { name: "Skills", href: "#skills" },
+  { name: "TechStack", href: "#skills" },
   { name: "Works", href: "#works" },
   { name: "Contact", href: "#contact" },
 ];
@@ -47,7 +47,7 @@ export default function Navbar() {
     >
       <nav className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
         <div className="flex items-center">
-          <a href="#home" className={`text-xl md:text-2xl font-bold ${isTerminal ? 'font-mono text-terminal-green terminal-shadow' : ''}`}>
+          <a href="#home" className={`cursor-target text-xl md:text-2xl font-bold ${isTerminal ? 'font-mono text-terminal-green terminal-shadow' : ''}`}>
             {isTerminal ? "> OSCAR_DHAMALA" : "Oscar Dhamala"}
           </a>
         </div>
@@ -59,7 +59,7 @@ export default function Navbar() {
               <a 
                 key={link.name}
                 href={link.href}
-                className={`text-sm font-medium hover:text-primary/80 transition-colors duration-200 ${
+                className={`cursor-target text-sm font-medium hover:text-primary/80 transition-colors duration-200 ${
                   isTerminal ? 'font-mono hover:text-terminal-green' : ''
                 }`}
               >
@@ -75,7 +75,7 @@ export default function Navbar() {
           <ThemeToggle />
           <button
             onClick={toggleMenu}
-            className="p-2 rounded-md"
+            className="cursor-target p-2 rounded-md"
             aria-label="Toggle menu"
           >
             {isMenuOpen ? (
@@ -98,7 +98,7 @@ export default function Navbar() {
                 key={link.name}
                 href={link.href}
                 onClick={closeMenu}
-                className={`text-lg font-medium ${
+                className={`cursor-target text-lg font-medium ${
                   isTerminal ? 'font-mono text-terminal-green' : ''
                 }`}
               >

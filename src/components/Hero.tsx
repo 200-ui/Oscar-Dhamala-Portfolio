@@ -100,10 +100,10 @@ export default function Hero() {
               LinkedIn
             </a>
             <a 
-              href="#contact" 
+              href="https://github.com/200-ui" 
               className="cursor-target btn-outline hover-translate"
             >
-              Contact Me
+              GitHub
             </a>
           </div>
         </div>

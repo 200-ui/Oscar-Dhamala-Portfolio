@@ -13,6 +13,20 @@ const TargetCursor: React.FC<TargetCursorProps> = ({
   spinDuration = 2,
   hideDefaultCursor = true,
 }) => {
+  // Check if device is mobile - if so, don't render anything
+  const isMobile = () => {
+    return window.innerWidth <= 768 || 
+           'ontouchstart' in window || 
+           navigator.maxTouchPoints > 0 ||
+           window.matchMedia('(hover: none)').matches ||
+           window.matchMedia('(pointer: coarse)').matches;
+  };
+
+  // Don't render on mobile devices
+  if (isMobile()) {
+    return null;
+  }
+
   const cursorRef = useRef<HTMLDivElement>(null);
   const cornersRef = useRef<NodeListOf<HTMLDivElement>>(null);
   const spinTl = useRef<gsap.core.Timeline>(null);
@@ -38,6 +52,20 @@ const TargetCursor: React.FC<TargetCursorProps> = ({
 
   useEffect(() => {
     if (!cursorRef.current) return;
+    
+    // Additional mobile check to prevent initialization
+    const isMobile = () => {
+      return window.innerWidth <= 768 || 
+             'ontouchstart' in window || 
+             navigator.maxTouchPoints > 0 ||
+             window.matchMedia('(hover: none)').matches ||
+             window.matchMedia('(pointer: coarse)').matches;
+    };
+    
+    // Don't initialize on mobile
+    if (isMobile()) {
+      return;
+    }
 
     const originalCursor = document.body.style.cursor;
     if (hideDefaultCursor) {

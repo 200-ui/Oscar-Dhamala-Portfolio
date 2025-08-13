@@ -431,3 +431,24 @@
   animation: swing 10s ease-in-out infinite 2s;
   transform-origin: 50% -100px;
 }
+
+/* Mobile Target Cursor Disable */
+@media (max-width: 768px), (hover: none), (pointer: coarse) {
+  .cursor-target {
+    cursor: auto !important;
+  }
+  
+  .target-cursor-wrapper {
+    display: none !important;
+  }
+  
+  body {
+    cursor: auto !important;
+  }
+  
+  /* Fix TechStack glass icons spacing on mobile */
+  .icon-btns {
+    padding: 1em 0 !important;
+    grid-gap: 2em !important;
+  }
+}

@@ -14,11 +14,11 @@ import {
 const projects = [
   {
     id: 1,
-    title: "WorkCurb - Employee Management System",
-    description: "A full-featured functioning web application for managing employee records and workflows having both HR and Employee dashboards.",
-    tags: ["React", "TypeScript", "Supabase", "Database", "Edge Function", "API"],
-    image: "/uploads/SS.png",
-    link: "https://workcurb.vercel.app/",
+    title: "Amplify AI - Your intelligent conversation companion",
+    description: "The AI chat application build on React, Typescript, Supabase and Edge function for customized poppy AI integration.",
+    tags: ["React", "TypeScript", "Supabase", "Database", "Edge Function", "Poppy AI API"],
+    image: "/uploads/Amplify.png",
+    link: "https://www.growonyt.com/",
   },
   {
     id: 2,
@@ -27,6 +27,15 @@ const projects = [
     tags: ["PHP", "MySQL", "Tailwind CSS", "JSON", "AJAX"],
     image: "/uploads/SS2.png",
     link: "https://www.youtube.com/watch?v=YiwaMS80IBo",
+  },
+
+    {
+    id: 3,
+    title: "Clarity - Your AI powered Personal Finance Tracker",
+    description: "MERN architecture integrated with AI to automatically categorize the Expense and Income as per user Input.",
+    tags: ["React", "Node.js", "Express", "MongoDB", "AI"],
+    image: "/uploads/Clarity.png",
+    link: "https://clarity-oscar.vercel.app/",
   },
 ];
 
